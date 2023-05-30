@@ -32,7 +32,6 @@ String.prototype.hashCode = function() {
 		hash = ((hash << 5) - hash) + chr;
 		hash |= 0;
 	}
-	console.log('hash ' + hash);
 	return hash >>> 0;
 }
 
@@ -131,7 +130,7 @@ String.prototype.hashCode = function() {
 	paramsMap.set('cookie1', encodeURI(hash));
 	paramsMap.set('device', encodeURI(navigator.platform));
 	paramsMap.set('lang', encodeURI(navigator.language));
-	paramsMap.set('ip', userIP);
+	//paramsMap.set('ip', userIP);
 
 	img.src =
 		'https://customer-tracking-node.herokuapp.com?metadata=' + pageNameMapped;
