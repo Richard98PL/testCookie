@@ -1,4 +1,3 @@
-<script>
 const productPagesMap = new Map();
 productPagesMap.set('review-and-design', 'REVIEWANDDESIGN');
 productPagesMap.set('salesforce-implementations', 'SALESFORCEIMPLEMENTATIONS');
@@ -144,5 +143,3 @@ document.addEventListener('DOMContentLoaded', (event) => {
 	img.style = "display: none";
 	document.getElementsByTagName('body')[0].appendChild(img);
 });
-
-</script> 
