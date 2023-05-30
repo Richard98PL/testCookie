@@ -142,4 +142,6 @@ String.prototype.hashCode = function() {
 	img.src += '&url=' + ("https://" + merged);
 	img.style = "display: none";
 	document.getElementsByTagName('body')[0].appendChild(img);
+
+	console.log('executed - genus.one');
 //});
