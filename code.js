@@ -1,4 +1,4 @@
-< script >
+<script>
 const productPagesMap = new Map();
 productPagesMap.set('review-and-design', 'REVIEWANDDESIGN');
 productPagesMap.set('salesforce-implementations', 'SALESFORCEIMPLEMENTATIONS');
