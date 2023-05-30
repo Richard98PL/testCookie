@@ -35,8 +35,8 @@ String.prototype.hashCode = function() {
 	return hash >>> 0;
 }
 
-document.addEventListener('DOMContentLoaded', (event) => { //must be DOMContentLoaded + CANT BE ASYNC SRCIPT!
-
+//document.addEventListener('DOMContentLoaded', (event) => { //must be DOMContentLoaded + CANT BE ASYNC SRCIPT!
+function executeAsyncCode() {
 	let pageNameMapped = '';
 
 	let merged = location.host + location.pathname;
@@ -142,4 +142,10 @@ document.addEventListener('DOMContentLoaded', (event) => { //must be DOMContentL
 	document.getElementsByTagName('body')[0].appendChild(img);
 
 	console.log('executed - genus.one');
-});
+}
+
+if (document.readyState === 'complete') {
+  executeAsyncCode();
+} else {
+  document.addEventListener('DOMContentLoaded', executeAsyncCode);
+}
