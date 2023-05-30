@@ -36,7 +36,7 @@ String.prototype.hashCode = function() {
 	return hash >>> 0;
 }
 
-document.addEventListener('DOMContentLoaded', (event) => {
+//document.addEventListener('DOMContentLoaded', (event) => {
 
 	let pageNameMapped = '';
 
@@ -142,4 +142,4 @@ document.addEventListener('DOMContentLoaded', (event) => {
 	img.src += '&url=' + ("https://" + merged);
 	img.style = "display: none";
 	document.getElementsByTagName('body')[0].appendChild(img);
-});
+//});
